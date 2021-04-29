@@ -1,3 +1,4 @@
 db
 .idea
 app/__pycache__
+app/.env
