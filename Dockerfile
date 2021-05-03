@@ -4,8 +4,12 @@ WORKDIR /code/app
 
 COPY /app .
 
-RUN pip install -r requirements.txt
-
 WORKDIR /code
+
+COPY /requirements.txt .
+
+COPY /config.py .
+
+RUN pip install -r requirements.txt
 
 COPY /run.py .
